@@ -13,6 +13,8 @@
     "react/jsx-indent": 0,
     "react/function-component-definition": 0,
     "react/forbid-component-props": 0,
-    "react/jsx-no-literals": 0
+    "react/jsx-no-literals": 0,
+    "react/jsx-max-depth": 0,
+    "import/no-anonymous-default-export": 0
   }
 }
