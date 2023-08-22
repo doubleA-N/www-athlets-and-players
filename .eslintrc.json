@@ -1,11 +1,6 @@
 {
   "plugins": ["react"],
-  "extends": [
-    "plugin:react/all",
-    "next/core-web-vitals",
-    "next",
-    "prettier"
-  ],
+  "extends": ["plugin:react/all", "next/core-web-vitals", "next", "prettier"],
   "rules": {
     "semi": ["error", "never"],
     "react/jsx-max-props-per-line": 0,
@@ -15,6 +10,10 @@
     "react/forbid-component-props": 0,
     "react/jsx-no-literals": 0,
     "react/jsx-max-depth": 0,
-    "import/no-anonymous-default-export": 0
+    "import/no-anonymous-default-export": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/display-name": 0,
+    "react/no-multi-comp": 0,
+    "react/jsx-no-leaked-render": 0
   }
 }
