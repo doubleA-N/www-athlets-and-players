@@ -1,22 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). And integration with [SCSS!](https://nextjs.org/docs/app/building-your-application/styling/sass) 🎉
+
+Created by Thidarat Chaichana
 
 ## Getting Started
 
-First, run the development server:
+First, install the required dependencies:
+
+```
+$ npm install
+```
+
+If there is an error while installing legacy dependency, please do this:
+
+```
+$ npm install --legacy-peer-deps
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Demo
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Desktop | Tablet | Mobile
+-- | -- | --
+![is-desktop](https://github.com/doubleA-N/www-athlets-and-players/assets/53621541/33e2cd5c-cc57-4ae2-8948-42b94c832ff7) | ![is-tablet](https://github.com/doubleA-N/www-athlets-and-players/assets/53621541/b91870ef-96ed-497b-8a57-f54a6a00a372) | ![is-mobile](https://github.com/doubleA-N/www-athlets-and-players/assets/53621541/19225360-06f6-49aa-b6b0-f4086b9a6740)
+
+
+## Contact
+
+If you want to contact someone about this project, please refer to the following email: thidarat.chai.mail@gmail.com
+
 
 ## Learn More
 
