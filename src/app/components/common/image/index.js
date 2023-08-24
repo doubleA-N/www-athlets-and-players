@@ -1,16 +1,27 @@
 import React from "react"
-import Image from "next/image"
+import clsx from "clsx"
 
-const ResponsiveImage = ({ alt, className, height, src, width }) => {
+const ResponsiveImage = ({
+  alt,
+  children,
+  className,
+  imageClass,
+  height,
+  src,
+  width,
+}) => {
   return (
     <div className={className}>
-      <Image
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
         alt={alt}
+        className={clsx("image", imageClass)}
         height={height || 200}
-        placeholder='blur'
+        placeholder="blur"
         src={src}
         width={width || 200}
       />
+      {children}
     </div>
   )
 }
