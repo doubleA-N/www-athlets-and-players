@@ -201,6 +201,14 @@
       line-height: normal;
       letter-spacing: 1.5px;
       position: relative;
+
+      @include for-mobile {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.5px;
+      }
     }
 
     hr {

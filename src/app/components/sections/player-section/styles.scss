@@ -302,6 +302,14 @@
       letter-spacing: 1.5px;
       position: relative;
 
+      @include for-mobile {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.5px;
+      }
+
       &.purple-medium {
         color: var(--purple-medium);
       }
@@ -336,6 +344,10 @@
   }
 
   .description {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
     margin-bottom: 30px;
     width: fit-content;
     min-width: 284px;
