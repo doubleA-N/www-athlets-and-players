@@ -1,11 +1,16 @@
 import React from "react"
 import clsx from "clsx"
+import Slider from "react-slick"
+import MagicSliderDots from "react-magic-slider-dots"
 import football_player from "public/football_player.png"
 import star from "public/star.svg"
 import star_light from "public/star_light.svg"
 import path from "public/path.svg"
 import ResponsiveImage from "../../common/image"
 import Icon from "../../common/icon"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import "react-magic-slider-dots/dist/magic-dots.css"
 import "./styles.scss"
 
 const ATHLETES_DETAILS = [
@@ -27,6 +32,19 @@ const ATHLETES_DETAILS = [
 ]
 
 const FootballSection = () => {
+  const sliderSettings = {
+    dots: true,
+    arrows: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    // eslint-disable-next-line react/no-unstable-nested-components
+    appendDots: (dots) => {
+      return <MagicSliderDots dots={dots} numDotsToShow={4} dotWidth={30} />
+    }
+  }
+
   return (
     <div className="inner">
       <div className="info">
@@ -48,9 +66,27 @@ const FootballSection = () => {
             </div>
           </div>
         ))}
-      </div>
+          <Slider {...sliderSettings}>
+            {ATHLETES_DETAILS.map((detail, idx) => (
+              <div className={clsx('details' ,'tier-1')} key={detail.title}>
+                <div className="detail">
+                  <div className="header">
+                    <div>
+                      <span className="header__number">{`0${idx + 1}`}</span>
+                      <hr />
+                    </div>
+                    <span className="header__title">{detail.title}</span>
+                  </div>
+                  <span className={clsx("description")}>
+                    {detail.description}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
       <ResponsiveImage
-        alt="test"
+        alt="img-football"
         className="img-wrapper"
         imageClass="football-player-img"
         src={football_player.src}

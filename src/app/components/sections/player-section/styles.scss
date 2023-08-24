@@ -5,6 +5,10 @@
   top: 0;
   right: 0;
   margin-top: 124px;
+
+  @include for-mobile {
+    margin-top: 20px;
+  }
 }
 
 .player-info {
@@ -38,6 +42,10 @@
     right: 0;
   }
 
+  @include for-mobile {
+    top: 54px;
+  }
+
   .basketball-player-img {
     width: 991px;
     height: 815px;
@@ -52,6 +60,11 @@
 
     @include for-tablet {
       margin-left: 258px;
+    }
+
+    @include for-mobile {
+      width: 302px;
+      height: 249px;
     }
   }
 
@@ -79,6 +92,11 @@
           top: 112px;
           right: 34px;
         }
+
+        @include for-mobile {
+          top: 42px;
+          right: 45px;
+        }
       }
 
       &-left {
@@ -95,6 +113,11 @@
           top: 96px;
           right: 49px;
         }
+
+        @include for-mobile {
+          top: 52px;
+          right: 26px;
+        }
       }
 
       &-right {
@@ -104,6 +127,11 @@
 
         @include for-tablet {
           display: none;
+        }
+
+        @include for-mobile {
+          top: 182px;
+          left: 159px;
         }
       }
     }
@@ -126,6 +154,16 @@
         @include for-tablet {
           display: none;
         }
+
+        @include for-mobile {
+          top: 44px;
+          left: 86px;
+
+          img {
+            width: 76.691px;
+            height: 89.838px;
+          }
+        }
       }
 
       &-left {
@@ -142,6 +180,16 @@
         @include for-tablet {
           top: 225px;
           right: -84px;
+        }
+
+        @include for-mobile {
+          top: 140px;
+          left: -60px;
+
+          img {
+            width: 76.691px;
+            height: 89.838px;
+          }
         }
       }
     }
@@ -166,6 +214,15 @@
   @include for-tablet {
     margin-bottom: 42px;
   }
+
+  @include for-mobile {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    left: 0;
+    margin-left: 18px;
+  }
 }
 
 .player-details {
@@ -173,6 +230,10 @@
 
   @include for-hd-desktop {
     height: 226px;
+  }
+
+  @include for-mobile {
+    display: none;
   }
 
   &.tier {
@@ -184,6 +245,9 @@
 
     &-1 {
       background-color: var(--light);
+      @include for-mobile {
+        height: 284px;
+      }
     }
 
     &-2 {
@@ -214,6 +278,11 @@
 
     @include for-tablet {
       width: 60%;
+    }
+
+    @include for-mobile {
+      width: 90%;
+      margin-top: 48px;
     }
   }
 
@@ -255,6 +324,14 @@
       line-height: normal;
       letter-spacing: 1.5px;
       color: var(--secondary);
+
+      @include for-mobile {
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.5px;
+      }
     }
   }
 
@@ -267,6 +344,20 @@
 
     &.neutral {
       color: var(--neutral);
+    }
+
+    @include for-tablet {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+    }
+
+    @include for-mobile {
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
     }
   }
 }
