@@ -1,0 +1,272 @@
+@import "../../../../scss/viewport.scss";
+
+.player-inner {
+  position: relative;
+  top: 0;
+  right: 0;
+  margin-top: 124px;
+}
+
+.player-info {
+  position: relative;
+  top: 0;
+  right: 0;
+
+  @include for-tablet {
+    top: 81px;
+  }
+}
+
+.player-img-wrapper {
+  position: absolute;
+  top: 0;
+  right: 20px;
+
+  @include for-s-desktop-and-l-desktop {
+    top: -11px;
+    right: 0;
+    width: 691px;
+    height: 568px;
+    overflow: hidden;
+  }
+
+  @include for-tablet {
+    top: 45px;
+    width: 691px;
+    height: 568px;
+    overflow: hidden;
+    right: 0;
+  }
+
+  .basketball-player-img {
+    width: 991px;
+    height: 815px;
+    aspect-ratio: 0.8;
+    position: relative;
+    z-index: 2;
+
+    @include for-desktop {
+      width: 691px;
+      height: 568px;
+    }
+
+    @include for-tablet {
+      margin-left: 258px;
+    }
+  }
+
+  .children-img {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: -18px;
+    right: 190px;
+
+    .icon-star {
+      position: absolute;
+
+      &-light-left {
+        position: absolute;
+        top: 127px;
+        right: 332px;
+
+        @include for-hd-desktop {
+          top: 127px;
+          right: 448px;
+        }
+
+        @include for-tablet {
+          top: 112px;
+          right: 34px;
+        }
+      }
+
+      &-left {
+        position: absolute;
+        top: 114px;
+        right: 353px;
+
+        @include for-hd-desktop {
+          top: 112px;
+          right: 470px;
+        }
+
+        @include for-tablet {
+          top: 96px;
+          right: 49px;
+        }
+      }
+
+      &-right {
+        position: absolute;
+        top: 326px;
+        left: 16px;
+
+        @include for-tablet {
+          display: none;
+        }
+      }
+    }
+
+    .line {
+      position: absolute;
+      z-index: -1;
+
+      &-right {
+        position: absolute;
+        top: 48px;
+        left: -60px;
+        z-index: 1;
+
+        @include for-hd-desktop {
+          top: 121px;
+          left: -93px;
+        }
+
+        @include for-tablet {
+          display: none;
+        }
+      }
+
+      &-left {
+        position: absolute;
+        top: 209px;
+        right: 150px;
+        z-index: 1;
+
+        @include for-hd-desktop {
+          top: 397px;
+          right: 385px;
+        }
+
+        @include for-tablet {
+          top: 225px;
+          right: -84px;
+        }
+      }
+    }
+  }
+}
+
+.player-title {
+  color: var(--secondary-light);
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: fit-content;
+  margin-bottom: 59px;
+  position: relative;
+  margin-left: 48px;
+
+  @include for-hd-desktop {
+    margin-left: 248px;
+  }
+
+  @include for-tablet {
+    margin-bottom: 42px;
+  }
+}
+
+.player-details {
+  display: flex;
+
+  @include for-hd-desktop {
+    height: 226px;
+  }
+
+  &.tier {
+    background-color: var(--light);
+
+    &-0 {
+      background-color: var(--neutral);
+    }
+
+    &-1 {
+      background-color: var(--light);
+    }
+
+    &-2 {
+      background-color: var(--dark);
+    }
+  }
+
+  .separated {
+    width: 50%;
+
+    @include for-tablet {
+      width: 40%;
+    }
+  }
+
+  .detail {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 36px;
+    width: 50%;
+
+    @include for-hd-desktop {
+      margin-left: 248px;
+    }
+
+    @include for-tablet {
+      width: 60%;
+    }
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    gap: 12px;
+
+    &__number {
+      color: var(--primary);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.5px;
+      position: relative;
+
+      &.purple-medium {
+        color: var(--purple-medium);
+      }
+    }
+
+    hr {
+      border: 2px solid var(--purple-dark);
+      border-radius: 2.5px;
+      margin: 4px 0;
+
+      &.neutral {
+        border: 2px solid var(--neutral);
+      }
+    }
+
+    &__title {
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.5px;
+      color: var(--secondary);
+    }
+  }
+
+  .description {
+    margin-bottom: 30px;
+    width: fit-content;
+    min-width: 284px;
+    max-width: 568px;
+    height: fit-content;
+
+    &.neutral {
+      color: var(--neutral);
+    }
+  }
+}

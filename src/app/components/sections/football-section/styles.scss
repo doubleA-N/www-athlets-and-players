@@ -1,0 +1,189 @@
+@import "../../../../scss/viewport.scss";
+
+.inner {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 35px;
+}
+
+.info {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  @include for-tablet {
+    top: 81px;
+  }
+}
+
+.img-wrapper {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  margin-left: 48px;
+
+  @include for-hd-desktop {
+    top: 4px;
+  }
+
+  @include for-tablet {
+    top: 81px;
+    left: -144px;
+  }
+
+  .football-player-img {
+    width: 678px;
+    height: 950px;
+    margin-left: 100px;
+    aspect-ratio: 1.4;
+
+    @include for-desktop {
+      width: 518px;
+      height: 725px;
+      margin-left: 0;
+    }
+
+    @include for-tablet {
+      width: 498px;
+      height: 699px;
+      margin-left: 0;
+    }
+  }
+
+  .children-img {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: -18px;
+    left: 190px;
+    width: 30px;
+    height: 30px;
+
+    .icon-star {
+      margin: 8px 4px;
+    }
+
+    .line {
+      position: absolute;
+      top: 33px;
+      left: 4px;
+      z-index: -1;
+    }
+
+    @include for-desktop-and-up {
+      display: none;
+    }
+  }
+}
+
+.title {
+  color: var(--secondary-light);
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: fit-content;
+  margin-bottom: 59px;
+  position: relative;
+  left: 50%;
+
+  @include for-tablet {
+    left: 40%;
+    margin-bottom: 42px;
+  }
+}
+
+.details {
+  display: flex;
+
+  @include for-hd-desktop {
+    height: 226px;
+  }
+
+  &.tier {
+    background-color: var(--light);
+
+    &-0 {
+      background-color: var(--neutral);
+    }
+
+    &-1 {
+      background-color: var(--light);
+    }
+
+    &-2 {
+      background-color: var(--purple);
+    }
+  }
+
+  .separated {
+    width: 50%;
+
+    @include for-tablet {
+      width: 40%;
+    }
+  }
+
+  .detail {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    padding: 20px;
+    justify-content: center;
+    width: 50%;
+
+    @include for-tablet {
+      width: 60%;
+    }
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    gap: 12px;
+
+    &__number {
+      color: var(--primary);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.5px;
+      position: relative;
+    }
+
+    hr {
+      border: 2px solid var(--purple-dark);
+      border-radius: 2.5px;
+      margin: 4px 0;
+
+      &.neutral {
+        border: 2px solid var(--neutral);
+      }
+    }
+
+    &__title {
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.5px;
+      color: var(--secondary);
+    }
+  }
+
+  .description {
+    margin-bottom: 30px;
+    width: fit-content;
+    min-width: 284px;
+    max-width: 568px;
+    height: fit-content;
+
+    &.neutral {
+      color: var(--neutral);
+    }
+  }
+}
