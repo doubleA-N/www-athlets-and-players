@@ -1,7 +1,7 @@
 import React from "react"
 import clsx from "clsx"
 
-const ResponsiveImage = ({
+const Image = ({
   alt,
   children,
   className,
@@ -26,4 +26,4 @@ const ResponsiveImage = ({
   )
 }
 
-export default ResponsiveImage
+export default Image

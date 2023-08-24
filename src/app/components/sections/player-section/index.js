@@ -6,7 +6,7 @@ import basketball_player from "public/basketball_player.png"
 import star from "public/star.svg"
 import star_light from "public/star_light.svg"
 import path from "public/path.svg"
-import ResponsiveImage from "../../common/image"
+import Image from "../../common/image"
 import Icon from "../../common/icon"
 import "react-magic-slider-dots/dist/magic-dots.css"
 import "slick-carousel/slick/slick.css"
@@ -88,7 +88,7 @@ const PlayerSection = () => {
           ))}
         </Slider>
       </div>
-      <ResponsiveImage
+      <Image
         alt="player-img"
         className="player-img-wrapper"
         imageClass="basketball-player-img"
@@ -119,7 +119,7 @@ const PlayerSection = () => {
             height={234}
           />
         </div>
-      </ResponsiveImage>
+      </Image>
     </div>
   )
 }

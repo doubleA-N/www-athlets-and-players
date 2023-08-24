@@ -6,7 +6,7 @@ import football_player from "public/football_player.png"
 import star from "public/star.svg"
 import star_light from "public/star_light.svg"
 import path from "public/path.svg"
-import ResponsiveImage from "../../common/image"
+import Image from "../../common/image"
 import Icon from "../../common/icon"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -85,7 +85,7 @@ const FootballSection = () => {
             ))}
           </Slider>
         </div>
-      <ResponsiveImage
+      <Image
         alt="img-football"
         className="img-wrapper"
         imageClass="football-player-img"
@@ -102,7 +102,7 @@ const FootballSection = () => {
             height={234}
           />
         </div>
-      </ResponsiveImage>
+      </Image>
     </div>
   )
 }
