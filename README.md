@@ -38,7 +38,7 @@ You can access it here https://www-athlets-and-players.vercel.app/ It's a live d
 
 Desktop | Tablet | Mobile
 -- | -- | --
-![is-desktop](https://github.com/doubleA-N/www-athlets-and-players/assets/53621541/33e2cd5c-cc57-4ae2-8948-42b94c832ff7) | ![is-tablet](https://github.com/doubleA-N/www-athlets-and-players/assets/53621541/b91870ef-96ed-497b-8a57-f54a6a00a372) | ![is-mobile](https://github.com/doubleA-N/www-athlets-and-players/assets/53621541/19225360-06f6-49aa-b6b0-f4086b9a6740)
+![is-desktop](https://github.com/doubleA-N/www-athlets-and-players/assets/53621541/33e2cd5c-cc57-4ae2-8948-42b94c832ff7) | ![is-tablet](https://github.com/doubleA-N/www-athlets-and-players/assets/53621541/915806e6-5567-4b6b-805b-044d0dd0f2f4) | ![is-mobile](https://github.com/doubleA-N/www-athlets-and-players/assets/53621541/19225360-06f6-49aa-b6b0-f4086b9a6740)
 
 
 ## Contact
