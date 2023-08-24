@@ -15,6 +15,12 @@ $hd-screen: 1920px;
   }
 }
 
+@mixin for-tablet-and-up {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
 @mixin for-s-desktop-and-l-desktop {
   @media (min-width: #{$desktop-width}) and (max-width: #{$large-desktop-width}) {
     @content;
