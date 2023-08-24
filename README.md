@@ -4,13 +4,19 @@ Created by Thidarat Chaichana
 
 ## Getting Started
 
+Before you begin, ensure you have met the following requirements:
+
+- It would be better if you have a Mac / Linux Workstation.
+- You have installed the following software:
+  - Node JS 16.x
+ 
 First, install the required dependencies:
 
 ```
 $ npm install
 ```
 
-If there is an error while installing legacy dependency, please do this:
+If there is an error while installing a legacy dependency, please do this:
 
 ```
 $ npm install --legacy-peer-deps
@@ -25,6 +31,10 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Demo
+
+You can access it here https://www-athlets-and-players.vercel.app/ It's a live demo! 🎉
+
+
 
 Desktop | Tablet | Mobile
 -- | -- | --
