@@ -38,7 +38,7 @@ You can access it here https://www-athlets-and-players.vercel.app/ It's a live d
 
 Desktop | Tablet | Mobile
 -- | -- | --
-![is-desktop](https://github.com/doubleA-N/www-athlets-and-players/assets/53621541/33e2cd5c-cc57-4ae2-8948-42b94c832ff7) | ![is-tablet](https://github.com/doubleA-N/www-athlets-and-players/assets/53621541/915806e6-5567-4b6b-805b-044d0dd0f2f4) | ![is-mobile](https://github.com/doubleA-N/www-athlets-and-players/assets/53621541/19225360-06f6-49aa-b6b0-f4086b9a6740)
+![is-desktop](https://github.com/doubleA-N/www-athlets-and-players/assets/53621541/33e2cd5c-cc57-4ae2-8948-42b94c832ff7) | ![is-tablet](https://github.com/doubleA-N/www-athlets-and-players/assets/53621541/915806e6-5567-4b6b-805b-044d0dd0f2f4) | ![is-mobile](https://github.com/doubleA-N/www-athlets-and-players/assets/53621541/e9ee2c7e-f7fd-446e-a531-f5cc174ae7d3)
 
 
 ## Contact
@@ -57,6 +57,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy the Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
